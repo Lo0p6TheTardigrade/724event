@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-import "./style.scss";
+import './style.scss';
 
 export const BUTTON_TYPES = {
   DEFAULT: 1,
@@ -17,8 +17,7 @@ const Button = ({ title, onClick, type, disabled, children }) => {
           className="Button"
           data-testid="button-test-id"
           onClick={onClick}
-          title={title}
-        >
+          title={title}>
           {children}
         </button>
       );
@@ -42,8 +41,7 @@ const Button = ({ title, onClick, type, disabled, children }) => {
           className="Button"
           data-testid="button-test-id"
           onClick={onClick}
-          title={title}
-        >
+          title={title}>
           {children}
         </button>
       );
@@ -62,8 +60,8 @@ Button.defaultProps = {
   disabled: false,
   onClick: () => null,
   type: BUTTON_TYPES.DEFAULT,
-  title: "",
-  children: null
-}
+  title: '',
+  children: null,
+};
 
 export default Button;
