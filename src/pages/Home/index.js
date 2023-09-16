@@ -15,7 +15,6 @@ import { useData } from '../../contexts/DataContext';
 const Page = () => {
   const { data } = useData();
   const sortedEvents = data ? [...data.events].sort((evtA, evtB) => (new Date(evtA.date) < new Date(evtB.date) ? -1 : 1)) : [];
-
   const last = sortedEvents ? sortedEvents[sortedEvents.length - 1] : null;
   return (
     <>
