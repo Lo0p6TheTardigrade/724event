@@ -11,7 +11,7 @@ const Select = ({ selection, onChange, name, titleEmpty, label, type = 'normal' 
   const changeValue = (newValue) => {
     onChange(newValue);
     setValue(newValue);
-    setCollapsed(newValue);
+    setCollapsed(!collapsed);
   };
   return (
     <div
